@@ -42,3 +42,7 @@ The Vietnamese translations are an AI-edited draft (`status: draft`,
 
 The full CC BY-SA 4.0 text is in [LICENSE](LICENSE); the MIT text is in
 [LICENSES/MIT-complete-hsk-vocabulary.txt](LICENSES/MIT-complete-hsk-vocabulary.txt).
+
+
+## Câu ví dụ (data/sentences.js)
+Câu tiếng Trung: Tatoeba (https://tatoeba.org), CC BY 2.0 FR, lọc từ https://github.com/mcodelook/ChineseWordSeg-SentencesExamples. Bản dịch tiếng Việt: trợ lý AI, chưa được duyệt.

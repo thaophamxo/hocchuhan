@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#eef2e6">
+<meta name="theme-color" content="#fff4f8">
 <meta name="description" content="Vườn Chữ Hán — học tiếng Trung HSK 1–3 qua bài học, thẻ ghi nhớ, ôn tập ngắt quãng và bài luyện tập, giải nghĩa bằng tiếng Việt.">
 <title>Vườn Chữ Hán — HSK 1–3 cho người Việt</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐼</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Noto+Serif+SC:wght@500;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Be+Vietnam+Pro:wght@400;500;700&family=Noto+Serif+SC:wght@500;900&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#eef2e6;--card:#f8faf3;--moss:#3f5b3a;--moss2:#2c4129;--bamboo:#c9d6a8;--ink:#1f2a22;--mute:#5d6b5c;--plum:#7a3b5e;--line:#d3dcc2;--ok:#2f7d4f;--bad:#b3433b}
-@media(prefers-color-scheme:dark){:root{--paper:#1a221b;--card:#232d24;--moss:#a7c58f;--moss2:#c9e0b4;--bamboo:#34452f;--ink:#e8eee0;--mute:#9fb09b;--plum:#d99ac0;--line:#35443a;--ok:#7fcf9c;--bad:#ef8d84}}
+:root{--paper:#fff4f8;--card:#fffdfe;--moss:#d6477d;--moss2:#e9ddff;--bamboo:#ffe9a6;--ink:#3b2a4d;--mute:#7a6a8a;--plum:#7a56d1;--line:#f3d3e2;--ok:#238a5b;--bad:#d23f55}
+@media(prefers-color-scheme:dark){:root{--paper:#241a33;--card:#2f2342;--moss:#ff8fb8;--moss2:#2b2040;--bamboo:#5a4a1c;--ink:#f4e9ff;--mute:#b9a8cf;--plum:#c4a8ff;--line:#45355c;--ok:#7fe0a8;--bad:#ff8c9b}}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
 body{font:16px/1.55 "Be Vietnam Pro",system-ui,sans-serif;background:var(--paper);color:var(--ink);display:grid;grid-template-columns:248px 1fr}
@@ -71,16 +71,36 @@ input,select{font:inherit;background:var(--card);color:var(--ink);border:1px sol
 }
 @media(prefers-reduced-motion:no-preference){.face{transition:transform .2s}.face:active{transform:scale(.98)}}
 .tabs .btn{min-width:84px}.face .vi{font-size:22px}.opt small{display:block}
+
+/* ===== Pastel theme ===== */
+body{background-image:radial-gradient(#f8cde0 1.3px,transparent 1.3px);background-size:24px 24px}
+h1,h2,.brand span,.stat,.btn{font-family:"Baloo 2","Be Vietnam Pro",sans-serif}
+aside{background:linear-gradient(180deg,#e9ddff,#ffe0ee);color:var(--ink)}
+aside a:hover{background:rgba(255,255,255,.65)}aside a.on{background:#ffe9a6;color:#5a3b00;box-shadow:0 3px 0 #f2cf72}
+.brand b{background:#fff;color:var(--moss);box-shadow:0 3px 0 #f3d3e2}.mascot{background:rgba(255,255,255,.7)}
+.card,.face{border-width:2px;border-radius:22px;box-shadow:0 4px 0 var(--line)}
+.btn{border-radius:99px;color:#fff;background:var(--moss);box-shadow:0 4px 0 rgba(0,0,0,.15);padding:9px 20px}.btn:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.btn.alt{background:var(--card);color:var(--ink);box-shadow:0 4px 0 var(--line)}
+.pill{background:#fff;border-color:#f9c6dc}.bar{height:12px;background:#fde3ee}.bar>div{background:linear-gradient(90deg,#ff9ec4,#b79cff);border-radius:9px}
+.hero{background:linear-gradient(135deg,#ffd3e6,#ffe9c9 55%,#d6ecff);color:var(--ink);border-radius:30px;box-shadow:0 6px 0 #f3d3e2}
+.hero .btn{background:var(--moss);color:#fff}.hero .big{color:var(--moss)}
+.opt{border-radius:18px;border-width:2px}.lesson:hover{transform:translateY(-3px)}
+.tile{font-family:"Noto Serif SC",serif;font-size:24px;padding:8px 14px;border-radius:16px;border:2px solid #f9c6dc;background:#fff;color:#3b2a4d;box-shadow:0 3px 0 #f3d3e2}
+.tile:hover{border-color:var(--plum)}.slot{min-height:68px;border:2px dashed var(--plum);border-radius:18px;padding:8px;display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.bank{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:14px}
+.q .fb{text-align:center;margin-top:12px}.q .fb b.ok{color:var(--ok)}.q .fb b.no{color:var(--bad)}
+@media(prefers-color-scheme:dark){body{background-image:none}aside{background:linear-gradient(180deg,#2b2040,#3a2147)}aside a:hover{background:rgba(255,255,255,.1)}aside a.on{background:#5a4a1c;color:#ffe9a6;box-shadow:none}.brand b{background:#3a2c52}.mascot{background:rgba(255,255,255,.08)}.hero{background:linear-gradient(135deg,#4a2a5e,#3a3a6e);box-shadow:none}.pill{background:var(--card)}.tile{background:var(--card);color:var(--ink)}.bar{background:var(--line)}}
+@media(prefers-reduced-motion:no-preference){.mascot{animation:bob 3s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-4px)}}.lesson{transition:transform .15s}}
 </style>
 </head>
 <body>
 <aside>
  <div class="brand"><b class="han">汉</b><span>Vườn Chữ Hán<small>HSK 1–3 · tiếng Việt</small></span></div>
  <nav id="nav"></nav>
- <div class="mascot">🐼 <b>Trúc bên bạn!</b><br>Mỗi ngày một ít, chữ sẽ nảy mầm 🌱</div>
+ <div class="mascot">🐼 <b>Trúc bên bạn!</b><br>Mỗi ngày một ít, chữ sẽ nở hoa 🌸</div>
 </aside>
 <main id="main" tabindex="-1"></main>
-<script src="hsk-data.js"></script>
+<script src="data/hsk-data.js"></script>
+<script src="data/sentences.js"></script>
 <script>
 // ===== Dữ liệu: data/hsk-data.js → [cấp, chữ, pinyin, nghĩa, từ loại] =====
 const W=[],LESSONS=[],PER=20;
@@ -95,7 +115,7 @@ function touch(n=1){const t=day();if(S.last!==t){S.streak=S.last===day(-1)?S.str
 function grade(id,ok){const c=S.cards[id]||{b:0,d:day()};c.b=ok?Math.min(5,c.b+1):0;c.d=day(GAP[c.b]);S.cards[id]=c;S.xp+=ok?2:0;touch()}
 const due=()=>W.filter(w=>S.cards[w.id]&&S.cards[w.id].d<=day());
 const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").toLowerCase();
-const speak=t=>{try{const u=new SpeechSynthesisUtterance(t);u.lang="zh-CN";u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}};
+const speak=(t,r=.8)=>{try{const u=new SpeechSynthesisUtterance(t);u.lang="zh-CN";u.rate=r;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}};
 const $=s=>document.querySelector(s),M=$("#main");
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
 const head=(t,sub,extra="")=>`<div class="top"><div><h1>${t}</h1><p class="sub">${sub}</p></div>${extra}</div>`;
@@ -122,7 +142,26 @@ function draw(){const el=$("#"+ST.t);if(!ST.q.length){el.innerHTML=`<div class="
  const w=ST.q[ST.i];el.innerHTML=`<p class="sub" style="text-align:center">Thẻ ${ST.i+1}/${ST.q.length}</p><div class="flash"><button class="face" onclick="ST.f=!ST.f;if(ST.f)speak('${w.h}');draw()" aria-label="Lật thẻ">${ST.f?`<div class="py">${w.p}</div><div class="vi">${w.v}</div><div class="han" style="font-size:40px">${w.h}</div>${w.hv?`<small class="sub">Hán Việt: ${w.hv}</small>`:""}`:`<div class="han" lang="zh">${w.h}</div><small class="sub">Chạm để xem nghĩa</small>`}</button></div>${ST.f?`<div class="row" style="justify-content:center"><button class="btn alt" onclick="ans(0)">Chưa nhớ</button><button class="btn" onclick="ans(1)">Đã nhớ</button></div>`:""}`}
 window.ans=ok=>{grade(ST.q[ST.i].id,ok);ST.i++;ST.f=false;draw()};
 let T;
-V.trainer=()=>head("Luyện tập","Trả lời 10 câu trắc nghiệm, mỗi câu đúng được 2 XP.")+`<label for="tl">Cấp độ:</label> <select id="tl" style="max-width:120px"><option>1</option><option>2</option><option>3</option></select><div class="row"><button class="btn" onclick="tr('hv')">Chữ Hán → nghĩa</button><button class="btn alt" onclick="tr('vh')">Nghĩa → chữ Hán</button></div><div id="tq" style="margin-top:20px"></div>`;
+V.trainer=()=>head("Luyện tập",`Chọn cấp độ và dạng bài. ${SN.length} câu ví dụ, mỗi lượt 10 câu, đúng một câu được 2 XP.`)+`<label for="tl">Cấp độ: </label><select id="tl" style="max-width:120px"><option value="1">HSK 1</option><option value="2">HSK 2</option><option value="3">HSK 3</option></select><div class="grid" style="margin-top:16px">${EX.map(([k,e,t,d])=>`<button class="card lesson" onclick="ex('${k}')"><span style="font-size:34px">${e}</span><b>${t}</b><small class="sub">${d}</small></button>`).join("")}</div><div id="tq" style="margin-top:20px"></div>`;
+const EX=[["hv","🌸","Từ → nghĩa","Chọn nghĩa tiếng Việt đúng"],["vh","🍓","Nghĩa → từ","Chọn chữ Hán đúng"],["ord","🧩","Sắp xếp câu","Ghép các từ thành câu đúng"],["zv","🐼","Dịch Trung → Việt","Chọn bản dịch tiếng Việt"],["vz","🍑","Dịch Việt → Trung","Chọn câu tiếng Trung đúng"],["dic","🎧","Nghe & gõ chữ Hán","Nghe rồi gõ lại cả câu"]];
+const SN=(window.SENT||[]).map((r,i)=>({id:i,lv:r[0],zh:r[1],t:r[2],py:r[3],vi:r[4]}));
+let SS;const slow=t=>speak(t,.5);
+window.ex=m=>{if(m==="hv"||m==="vh")return tr(m);const P=SN.filter(s=>s.lv<=+$("#tl").value);SS={m,P,q:shuffle(P).slice(0,10),i:0,s:0,sel:[],done:false};sx();$("#tq").scrollIntoView({behavior:"smooth"})};
+function sx(){const el=$("#tq");if(!el)return;SS.done=false;
+ if(SS.i>=SS.q.length){el.innerHTML=`<div class="empty"><div style="font-size:48px">${SS.s>=SS.q.length*.8?"🌈":"🍓"}</div><b>Bạn đúng ${SS.s}/${SS.q.length} câu.</b><div class="row" style="justify-content:center"><button class="btn" onclick="ex('${SS.m}')">Chơi lại</button></div></div>`;return}
+ const s=SS.q[SS.i],h=`<p class="sub" style="text-align:center">Câu ${SS.i+1}/${SS.q.length}</p>`;
+ if(SS.m==="ord"){SS.sel=[];SS.bank=shuffle(s.t.map((w,k)=>({w,k})));ord()}
+ else if(SS.m==="dic"){el.innerHTML=`<div class="q">${h}<p class="sub" style="text-align:center">Nghe rồi gõ lại câu bằng chữ Hán</p><p style="text-align:center"><button class="btn" onclick="speak(SS.q[SS.i].zh)">🔊 Nghe</button> <button class="btn alt" onclick="slow(SS.q[SS.i].zh)">🐢 Nghe chậm</button></p><input id="dI" lang="zh" autocomplete="off" placeholder="Gõ chữ Hán…" style="width:100%;max-width:none;font-size:22px" aria-label="Câu bạn nghe được"><div class="row"><button class="btn" onclick="dchk()">Kiểm tra</button><button class="btn alt" onclick="$('#hint').textContent='Gợi ý pinyin: '+SS.q[SS.i].py">Gợi ý</button></div><p id="hint" class="sub"></p><p class="sub">Không nghe thấy tiếng? Hãy bật giọng đọc tiếng Trung trong cài đặt của thiết bị.</p><div id="nx"></div></div>`;$("#dI").onkeydown=e=>{if(e.key==="Enter")dchk()};$("#dI").focus();speak(s.zh)}
+ else{const zv=SS.m==="zv",o=shuffle([s,...shuffle(SS.P.filter(x=>x.id!==s.id&&x.vi!==s.vi&&x.zh!==s.zh)).slice(0,3)]);
+  el.innerHTML=`<div class="q">${h}${zv?`<div class="han" lang="zh" style="font-size:38px;text-align:center">${s.zh}</div><p style="text-align:center"><button class="ico" onclick="speak(SS.q[SS.i].zh)" aria-label="Nghe">🔊</button></p>`:`<div class="vi">${s.vi}</div>`}${o.map(x=>`<button class="opt ${zv?"":"han"}" ${x.id===s.id?"data-c=1":""} onclick="sp(this,${x.id===s.id})">${zv?x.vi:x.zh}</button>`).join("")}<div id="nx"></div></div>`}}
+function ord(){const s=SS.q[SS.i],el=$("#tq");const left=SS.bank.filter(b=>!SS.sel.includes(b));
+ el.innerHTML=`<div class="q"><p class="sub" style="text-align:center">Câu ${SS.i+1}/${SS.q.length}</p><div class="vi" style="font-size:24px">${s.vi}</div><div class="slot han" aria-live="polite">${SS.sel.map(x=>`<button class="tile" onclick="unp(${x.k})">${x.w}</button>`).join("")||'<span class="sub" style="font-family:Be Vietnam Pro">Chạm các từ bên dưới để ghép câu</span>'}</div><div class="bank">${left.map(b=>`<button class="tile" onclick="pk2(${b.k})">${b.w}</button>`).join("")}</div><div class="row" style="justify-content:center"><button class="btn alt" onclick="SS.sel=[];ord()">Làm lại</button><button class="btn" onclick="chk()" ${left.length?"disabled":""}>Kiểm tra</button></div><div id="nx"></div></div>`}
+window.pk2=k=>{if(SS.done)return;SS.sel.push(SS.bank.find(b=>b.k===k));ord()};
+window.unp=k=>{if(SS.done)return;SS.sel=SS.sel.filter(b=>b.k!==k);ord()};
+function fin(ok,s){SS.done=true;if(ok){SS.s++;S.xp+=2}touch();speak(s.zh);$("#nx").innerHTML=`<p class="fb"><b class="${ok?"ok":"no"}">${ok?"🎉 Đúng rồi!":"Chưa đúng. Đáp án:"}</b><br><span class="han" style="font-size:26px">${s.zh}</span><br><small class="sub">${s.py}</small><br>${s.vi}</p><div class="row" style="justify-content:center"><button class="btn" onclick="SS.i++;sx()">Tiếp tục</button></div>`}
+window.chk=()=>{if(SS.done)return;const s=SS.q[SS.i];fin(SS.sel.map(x=>x.w).join("")===s.t.join(""),s)};
+window.sp=(b,ok)=>{if(SS.done)return;b.classList.add(ok?"ok":"bad");const c=document.querySelector(".opt[data-c]");if(c)c.classList.add("ok");fin(ok,SS.q[SS.i])};
+window.dchk=()=>{if(SS.done)return;const n=t=>t.replace(/[\s，。？！、；：“”‘’「」,.?!;:'"]/g,""),s=SS.q[SS.i];fin(n($("#dI").value)===n(s.zh),s)};
 window.tr=m=>{const P=W.filter(w=>w.lv===+$("#tl").value);T={m,P,q:shuffle(P).slice(0,10),i:0,s:0,done:false};tq()};
 function tq(){const el=$("#tq");if(!el)return;if(T.i>=T.q.length){el.innerHTML=`<div class="empty"><div style="font-size:48px">${T.s>=8?"🌳":"🌿"}</div><b>Bạn đúng ${T.s}/10 câu.</b><div class="row" style="justify-content:center"><button class="btn" onclick="tr('${T.m}')">Chơi lại</button></div></div>`;return}
  const w=T.q[T.i],o=shuffle([w,...shuffle(T.P.filter(x=>x.id!==w.id&&x.s!==w.s)).slice(0,3)]),hv=T.m==="hv";T.done=false;
@@ -131,7 +170,7 @@ window.pick=(b,id)=>{if(T.done)return;T.done=true;const ok=+b.dataset.id===id;if
 V.review=()=>{const d=due();return head("Ôn tập ngắt quãng",`${d.length} thẻ đến hạn hôm nay. Thẻ nhớ tốt sẽ xuất hiện thưa dần (1, 2, 4, 8, 16 ngày).`)+`<div id="rv"></div>`};
 V.review.after=()=>begin(due(),"rv");
 V.progress=()=>{const k=Object.values(S.cards);return head("Tiến độ","Khu vườn của bạn đang lớn dần.")+`<div class="grid"><div class="card"><div class="stat">${k.length}</div>từ đã gặp</div><div class="card"><div class="stat">${k.filter(c=>c.b>=3).length}</div>từ nhớ vững</div><div class="card"><div class="stat">${S.streak}</div>ngày liên tiếp</div><div class="card"><div class="stat">${S.xp}</div>XP</div></div><h2>Theo cấp độ</h2><div class="card">${[1,2,3].map(n=>{const a=W.filter(w=>w.lv===n),s=a.filter(w=>S.cards[w.id]).length,m=a.filter(w=>S.cards[w.id]&&S.cards[w.id].b>=3).length;return `<p style="margin:10px 0 4px">HSK ${n} <small class="sub">${s}/${a.length} đã gặp · ${m} nhớ vững</small></p><div class="bar"><div style="width:${s/a.length*100}%"></div></div>`}).join("")}</div>`};
-V.settings=()=>head("Cài đặt","Dữ liệu chỉ lưu trong trình duyệt này.")+`<div class="card"><label for="g">Mục tiêu mỗi ngày (số lượt luyện tập)</label><br><input id="g" type="number" min="1" max="200" value="${S.goal}" style="margin-top:8px"><div class="row"><button class="btn" onclick="S.goal=Math.max(1,+$('#g').value||10);save();alert('Đã lưu mục tiêu.')">Lưu mục tiêu</button><button class="btn alt" onclick="if(confirm('Xoá toàn bộ tiến độ? Không thể hoàn tác.')){localStorage.removeItem(KEY);location.reload()}">Xoá tiến độ</button></div></div><h2>Nguồn dữ liệu</h2><div class="card"><p>Danh sách từ: HSK 3.0 cấp 1–3 từ <a href="https://github.com/drkameleon/complete-hsk-vocabulary">complete-hsk-vocabulary</a> (MIT) qua bộ <a href="https://github.com/leiinc/hocchu">HocChu</a>. Nghĩa gốc: CC-CEDICT; bản tiếng Việt do HocChu biên tập (CC BY-SA 4.0), <b>chưa được người bản ngữ duyệt</b>. Âm Hán Việt chỉ có ở một số từ.</p></div>`;
+V.settings=()=>head("Cài đặt","Dữ liệu chỉ lưu trong trình duyệt này.")+`<div class="card"><label for="g">Mục tiêu mỗi ngày (số lượt luyện tập)</label><br><input id="g" type="number" min="1" max="200" value="${S.goal}" style="margin-top:8px"><div class="row"><button class="btn" onclick="S.goal=Math.max(1,+$('#g').value||10);save();alert('Đã lưu mục tiêu.')">Lưu mục tiêu</button><button class="btn alt" onclick="if(confirm('Xoá toàn bộ tiến độ? Không thể hoàn tác.')){localStorage.removeItem(KEY);location.reload()}">Xoá tiến độ</button></div></div><h2>Nguồn dữ liệu</h2><div class="card"><p>Danh sách từ: HSK 3.0 cấp 1–3 từ <a href="https://github.com/drkameleon/complete-hsk-vocabulary">complete-hsk-vocabulary</a> (MIT) qua bộ <a href="https://github.com/leiinc/hocchu">HocChu</a>. Nghĩa gốc: CC-CEDICT; bản tiếng Việt do HocChu biên tập (CC BY-SA 4.0), <b>chưa được người bản ngữ duyệt</b>. Âm Hán Việt chỉ có ở một số từ.</p><p>Câu ví dụ: <a href="https://tatoeba.org">Tatoeba</a> (CC BY 2.0 FR), lọc từ kho <a href="https://github.com/mcodelook/ChineseWordSeg-SentencesExamples">ChineseWordSeg-SentencesExamples</a>. Bản dịch tiếng Việt do trợ lý AI viết, <b>chưa được người bản ngữ duyệt</b>; pinyin gợi ý lấy từ kho nguồn và có thể chưa chuẩn.</p></div>`;
 const NAV=[["home","▦","Tổng quan"],["lessons","▤","Bài học"],["dict","字","Từ điển"],["cards","▱","Thẻ ghi nhớ"],["trainer","✦","Luyện tập"],["review","↺","Ôn tập"],["progress","▥","Tiến độ"],["settings","⚙","Cài đặt"]];
 function route(){const r=(location.hash.slice(1)||"home");const v=V[r]?r:"home";const n=due().length;
  $("#nav").innerHTML=NAV.map(([k,i,t])=>`<a href="#${k}" class="${k===v?"on":""}" ${k===v?'aria-current="page"':""}><i>${i}</i>${t}${k==="review"&&n?`<em>${n}</em>`:""}</a>`).join("");
